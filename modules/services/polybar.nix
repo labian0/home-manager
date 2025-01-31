@@ -227,7 +227,7 @@ in {
         Restart = "on-failure";
       };
 
-      Install = { WantedBy = [ "tray.target" ]; };
+      Install = { WantedBy = [ "graphical-session.target" ]; };
     };
   };
 
