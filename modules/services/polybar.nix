@@ -214,7 +214,7 @@ in {
     systemd.user.services.polybar = {
       Unit = {
         Description = "Polybar status bar";
-        PartOf = [ "tray.target" ];
+        PartOf = [ "graphical-session.target" ];
         X-Restart-Triggers = mkIf (configFile != null) "${configFile}";
       };
 
